@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 
 const cors = require('cors');
 
-const Tarefa = require('./models/Tarefa');
+const Tarefa = require('./models/Tarefa.js');
 
 const app = express();
 
