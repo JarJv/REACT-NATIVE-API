@@ -8,13 +8,12 @@ const Tarefa = require('./models/Tarefa');
 
 const app = express();
 
-app.use(cors());
+app.use(cors()); 
 
 app.use(express.json());
 
 mongoose.connect(
     'mongodb+srv://dbJarJv:muchecho@cluster0.3pf0wcm.mongodb.net/?appName=Cluster0/tarefas',
-    { useNewUrlParser:true, useUnifiedTopology:true }
 )
 .then(()=>console.log('MongoDB Atlas conectado'))
 .catch(err=>console.log(err));
